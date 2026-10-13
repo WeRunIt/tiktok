@@ -20,7 +20,7 @@ app.use(express.static(__dirname));
 const db = new Client({
   user: "tiktokuser_user",
   host: "dpg-db6upk0m7kps73bf04cg-a.render.com",
-  database: "usersTiktokmimik",
+  database: "tiktokuser",
   password: "iCWCSCXhvJZegXW9mbENN3I23SrTFF7U",
   port: 5432,
 });
