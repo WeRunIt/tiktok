@@ -18,12 +18,11 @@ app.use(express.static(__dirname));
 
 // PostgreSQL connection
 const db = new Client({
-  user: "tiktokuser_user",
-  host: "postgresql://tiktokuser_user:iCWCSCXhvJZegXW9mbENN3I23SrTFF7U@dpg-db6upk0m7kps73bf04cg-a.oregon-postgres.render.com/tiktokuser",
-  database: "tiktokuser",
-  password: "iCWCSCXhvJZegXW9mbENN3I23SrTFF7U",
-  port: 5432,
+  connectionString: "postgresql://tiktokuser_user:iCWCSCXhvJZegXW9mbENN3I23SrTFF7U@dpg-db6upk0m7kps73bf04cg-a.oregon-postgres.render.com/tiktokuser",
+  ssl: { rejectUnauthorized: false }
 });
+db.connect();
+
 db.connect();
 app.listen(3000, () => {
   console.log("Server running at http://localhost:3000");
