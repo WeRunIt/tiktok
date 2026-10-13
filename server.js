@@ -18,10 +18,10 @@ app.use(express.static(__dirname));
 
 // PostgreSQL connection
 const db = new Client({
-  user: "postgres",
-  host: "localhost",
+  user: "tiktokuser_user",
+  host: "dpg-db6upk0m7kps73bf04cg-a.render.com",
   database: "usersTiktokmimik",
-  password: "12345",
+  password: "iCWCSCXhvJZegXW9mbENN3I23SrTFF7U",
   port: 5432,
 });
 db.connect();
