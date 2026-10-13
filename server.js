@@ -2,8 +2,6 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const session = require("express-session");
 const { Pool } = require("pg");
-const bcrypt = require("bcrypt");
-
 const app = express();
 
 // Middleware
